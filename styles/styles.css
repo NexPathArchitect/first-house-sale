@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;  /* Left and right aligned */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #388e3c;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    flex-grow: 1;  /* Ensures title takes up available space and remains centered */
+    text-align: center;  /* Title will be centered */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.language-switch {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switch button {
+    background-color: #ffffff;
+    color: #388e3c;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.language-switch button:hover {
+    background-color: #388e3c;
+    color: white;
+}
+
+
+
+/* 其他页面header样式 */
+header {
+    /* 全局header样式被去除，避免干扰 */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.property-types {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.property-types a {
+    text-decoration: underline;
+    color: #007BFF;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.property-types a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.property-types a:visited {
+    color: #800080;
+}
+
+.property-types img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-types img:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}

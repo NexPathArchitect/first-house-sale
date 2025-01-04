@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9; /* 更改为浅绿色背景 */
+  color: #333;
+}
+
+header {
+  background-color: #4caf50; /* 更改为绿色的头部背景 */
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  background-color: #388e3c; /* 更改为深绿色背景 */
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #2c6e2e; /* 更改为更深的绿色 */
+}
+
+section {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.5em;
+}
+
+form input {
+  padding: 0.8em;
+  margin-bottom: 1em;  
+  width: 100%;  
+  box-sizing: border-box;  
+}

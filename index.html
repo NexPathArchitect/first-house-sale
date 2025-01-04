@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence immobilière BelleMaison</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.fr, .en, .cn').forEach(el => el.style.display = 'none');
+            document.querySelectorAll(`.${lang}`).forEach(el => el.style.display = 'block');
+        }
+
+        window.onload = () => {
+            switchLanguage('fr'); // 默认显示法语
+        };
+    </script>
+</head>
+<body>
+<header style="display: flex; justify-content: center; align-items: center; position: relative;">
+    <h1 style="flex-grow: 1;">
+        <span class="fr">Agence immobilière BelleMaison</span>
+        <span class="en" style="display:none;">BelleMaison Real Estate Agency</span>
+        <span class="cn" style="display:none;">贝尔美宅房地产公司</span>
+    </h1>
+    <div class="language-switch" style="position: absolute; right: 20px;">
+        <button onclick="switchLanguage('fr')">FR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('cn')">CN</button>
+    </div>
+</header>
+
+    <div class="property-types">
+        <!-- French Section -->
+        <div class="fr">
+            <h2>Bienvenue</h2>
+            <p>Votre partenaire de confiance pour vendre votre propriété.</p>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Accueil</a></li>
+                    <li><a href="typesdeproprietes.html">Propriétés</a></li>
+                    <li><a href="infosclients.html">Contactez-nous</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- English Section -->
+        <div class="en" style="display:none;">
+            <h2>Welcome</h2>
+            <p>Your trusted partner in selling your property.</p>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Home</a></li>
+                    <li><a href="typesdeproprietes.html">Properties</a></li>
+                    <li><a href="infosclients.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Chinese Section -->
+        <div class="cn" style="display:none;">
+            <h2>欢迎</h2>
+            <p>您可信赖的房地产销售伙伴。</p>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">首页</a></li>
+                    <li><a href="typesdeproprietes.html">房产</a></li>
+                    <li><a href="infosclients.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <footer>
+        <p class="fr" style="display:none;">&copy; 2024 Agence immobilière BelleMaison. Tous droits réservés.</p>
+        <p class="en" style="display:none;">&copy; 2024 BelleMaison Real Estate Agency. All rights reserved.</p>
+        <p class="cn" style="display:none;">&copy; 2024 贝尔美宅房地产公司. 版权所有。</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condos for Sale in Montréal</title>
+    <link rel="stylesheet" href="styles/styleA.css">
+    <script>
+    function switchLanguage(lang) {
+        document.querySelectorAll('.en, .fr, .zh').forEach(el => el.style.display = 'none');
+        document.querySelectorAll(`.${lang}`).forEach(el => el.style.display = 'inline');
+    }
+    window.onload = () => {
+        switchLanguage('en'); // Default to English on load
+    };
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+	 <header>
+        <div class="header">
+            <div class="Bell Maison">
+                <!-- Multi-language Titles -->
+                <h1 class="en" data-lang="en">Condos for Sale in Montréal</h1>
+                <h1 class="fr" data-lang="fr" style="display:none;">Condos à vendre à Montréal</h1>
+                <h1 class="zh" data-lang="zh" style="display:none;">蒙特利尔待售公寓</h1>
+            </div>
+            <a href="#" onclick="switchLanguage('en')"></a>
+            <nav>
+                <ul>
+                    <li><a href="infosClients.html" class="en" data-lang="en">Contact Us</a><a href="infosClients.html" class="fr" data-lang="fr" style="display:none;">Contactez-nous</a><a href="infosClients.html" class="zh" data-lang="zh" style="display:none;">联系我们</a></li>
+                    <li><a href="typesdeproprietes.html" class="en" data-lang="en">Properties</a><a href="typesdepropriete.html" class="fr" data-lang="fr" style="display:none;">Propriétés</a><a href="typesdeproprietes.html" class="zh" data-lang="zh" style="display:none;">房产</a></li>
+                    <li><a href="menu.html" class="en" data-lang="en">Home</a><a href="menu.html" class="fr" data-lang="fr" style="display:none;">Accueil</a><a href="menu.html" class="zh" data-lang="zh" style="display:none;">首页</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <a href="#" onclick="switchLanguage('en')">EN</a> | <a href="#" onclick="switchLanguage('fr')">FR</a> | <a href="#" onclick="switchLanguage('zh')">中文</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="property-listings">
+
+            <!-- Property 1 -->
+            <div class="property">
+                <h3 class="en" data-lang="en">Most Affordable</h3>
+                <h3 class="fr" data-lang="fr" style="display:none;">Le plus abordable</h3>
+                <h3 class="zh" data-lang="zh" style="display:none;">最实惠</h3>
+                <h2 class="en" data-lang="en">$220,000 - 5720 Boul. Cavendish, #1005, Côte-Saint-Luc, Quebec</h2>
+                <h2 class="fr" data-lang="fr" style="display:none;">220 000 $ - 5720 Boul. Cavendish, #1005, Côte-Saint-Luc, Québec</h2>
+                <h2 class="zh" data-lang="zh" style="display:none;">220,000美元 - 5720 Boul. Cavendish, #1005, Côte-Saint-Luc, 魁北克</h2>
+                <p class="en" data-lang="en"><strong>Price Level:</strong> Low</p>
+                <p class="fr" data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Faible</p>
+                <p class="zh" data-lang="zh" style="display:none;"><strong>价格等级：</strong> 低</p>
+                <div class="property-content">
+                    <p class="en" data-lang="en"><strong>1 Bedroom</strong> | <strong>1 Bathroom</strong> | <strong>502 Sq. Ft.</strong></p>
+                    <p class="fr" data-lang="fr" style="display:none;"><strong>1 Chambre</strong> | <strong>1 Salle de bain</strong> | <strong>502 Pi²</strong></p>
+                    <p class="zh" data-lang="zh" style="display:none;"><strong>1 卧室</strong> | <strong>1 卫浴</strong> | <strong>502 平方英尺</strong></p>
+                    <p class="en" data-lang="en"><strong>Highlights:</strong> Located in Côte-Saint-Luc, this condo offers great value for first-time buyers or investors. Bright high-floor unit with convenient transportation access.</p>
+                    <p class="fr" data-lang="fr" style="display:none;"><strong>Points forts :</strong> Situé à Côte-Saint-Luc, ce condo offre une excellente valeur pour les primo-accédants ou les investisseurs. Unité en étage élevé avec un bon éclairage naturel et un accès pratique aux transports.</p>
+                    <p class="zh" data-lang="zh" style="display:none;"><strong>亮点：</strong> 该公寓位于Côte-Saint-Luc，为首次购房者或投资者提供极高的性价比。明亮的高楼层单元，交通便利。</p>
+                    <img src="images/Condo1.jpg" alt="Condo for sale">
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property">
+                <h3 class="en" data-lang="en">Best Features</h3>
+                <h3 class="fr" data-lang="fr" style="display:none;">Les meilleures caractéristiques</h3>
+                <h3 class="zh" data-lang="zh" style="display:none;">最佳特色</h3>
+                <h2 class="en" data-lang="en">$455,000 - 635 Rue St-Maurice, #508, Montréal (Ville-Marie), Quebec</h2>
+                <h2 class="fr" data-lang="fr" style="display:none;">455 000 $ - 635 Rue St-Maurice, #508, Montréal (Ville-Marie), Québec</h2>
+                <h2 class="zh" data-lang="zh" style="display:none;">455,000美元 - 635 Rue St-Maurice, #508, 蒙特利尔 (Ville-Marie), 魁北克</h2>
+                <p class="en" data-lang="en"><strong>Price Level:</strong> Medium</p>
+                <p class="fr" data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Moyen</p>
+                <p class="zh" data-lang="zh" style="display:none;"><strong>价格等级：</strong> 中</p>
+                <div class="property-content">
+                    <p class="en" data-lang="en"><strong>1 Bedroom</strong> | <strong>1 Bathroom</strong> | <strong>587 Sq. Ft.</strong></p>
+                    <p class="fr" data-lang="fr" style="display:none;"><strong>1 Chambre</strong> | <strong>1 Salle de bain</strong> | <strong>587 Pi²</strong></p>
+                    <p class="zh" data-lang="zh" style="display:none;"><strong>1 卧室</strong> | <strong>1 卫浴</strong> | <strong>587 平方英尺</strong></p>
+                    <p class="en" data-lang="en"><strong>Highlights:</strong> Prime location in Ville-Marie, perfect for urban living. Modern design with walking access to Old Port and downtown. Ideal for young professionals.</p>
+                    <p class="fr" data-lang="fr" style="display:none;"><strong>Points forts :</strong> Emplacement idéal à Ville-Marie, parfait pour une vie urbaine. Design moderne avec accès à pied au Vieux-Port et au centre-ville. Idéal pour les jeunes professionnels.</p>
+                    <p class="zh" data-lang="zh" style="display:none;"><strong>亮点：</strong> 位于Ville-Marie的黄金地段，适合城市生活。现代设计，步行可到达旧港和市中心。非常适合年轻专业人士。</p>
+                    <img src="images/Condo2.jpg" alt="Condo for sale">
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property">
+                <h3 class="en" data-lang="en">Most Comfortable</h3>
+                <h3 class="fr" data-lang="fr" style="display:none;">Le plus confortable</h3>
+                <h3 class="zh" data-lang="zh" style="display:none;">最舒适</h3>
+                <h2 class="en" data-lang="en">$769,000 - 6086 Rue Hutchison, Montréal (Outremont), Quebec</h2>
+                <h2 class="fr" data-lang="fr" style="display:none;">769 000 $ - 6086 Rue Hutchison, Montréal (Outremont), Québec</h2>
+                <h2 class="zh" data-lang="zh" style="display:none;">769,000美元 - 6086 Rue Hutchison, 蒙特利尔 (Outremont), 魁北克</h2>
+                <p class="en" data-lang="en"><strong>Price Level:</strong> High</p>
+                <p class="fr" data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Élevé</p>
+                <p class="zh" data-lang="zh" style="display:none;"><strong>价格等级：</strong> 高</p>
+                <div class="property-content">
+                    <p class="en" data-lang="en"><strong>2 Bedrooms</strong> | <strong>2 Bathrooms</strong> | <strong>1250 Sq. Ft.</strong></p>
+                    <p class="fr" data-lang="fr" style="display:none;"><strong>2 Chambres</strong> | <strong>2 Salles de bain</strong> | <strong>1250 Pi²</strong></p>
+                    <p class="zh" data-lang="zh" style="display:none;"><strong>2 卧室</strong> | <strong>2 卫浴</strong> | <strong>1250 平方英尺</strong></p>
+                    <p class="en" data-lang="en"><strong>Highlights:</strong> Spacious living in Outremont with access to parks and nearby cafes. Recently renovated with high-end finishes.</p>
+                    <p class="fr" data-lang="fr" style="display:none;"><strong>Points forts :</strong> Grand espace de vie à Outremont avec accès aux parcs et aux cafés voisins. Récemment rénové avec des finitions haut de gamme.</p>
+                    <p class="zh" data-lang="zh" style="display:none;"><strong>亮点：</strong> 位于Outremont的宽敞居住空间，靠近公园和咖啡馆。最近进行过翻修，采用高端装修材料。</p>
+                    <img src="images/Condo3.jpg" alt="Condo for sale">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

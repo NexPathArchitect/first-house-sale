@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelleMaison - Contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.fr, .en, .cn').forEach(el => el.style.display = 'none');
+            document.querySelectorAll(`.${lang}`).forEach(el => el.style.display = 'inline');
+        }
+
+        window.onload = () => {
+            switchLanguage('fr'); // 默认显示法语
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="fr">BelleMaison</span>
+            <span class="en" style="display:none;">BelleMaison</span>
+            <span class="cn" style="display:none;">贝尔美宅</span>
+        </h1>
+        <h2>
+            <span class="fr">Une petite agence immobilière</span>
+            <span class="en" style="display:none;">A small real estate agency</span>
+            <span class="cn" style="display:none;">一家小型房地产公司</span>
+        </h2>
+    </header>
+
+    <!-- Language Switch Buttons placed prominently in the header -->
+    <div class="language-switch" style="text-align: right; padding: 10px 20px;">
+        <button onclick="switchLanguage('fr')">FR</button>
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('cn')">CN</button>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="menu.html">
+                <span class="fr">Accueil</span>
+                <span class="en" style="display:none;">Home</span>
+                <span class="cn" style="display:none;">首页</span>
+            </a></li>
+            <li><a href="typesdeproprietes.html">
+                <span class="fr">Propriétés</span>
+                <span class="en" style="display:none;">Properties</span>
+                <span class="cn" style="display:none;">房产</span>
+            </a></li>
+            <li><a href="infosClients.html">
+                <span class="fr">Contactez-nous</span>
+                <span class="en" style="display:none;">Contact Us</span>
+                <span class="cn" style="display:none;">联系我们</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>
+            <span class="fr">Veuillez remplir le formulaire ci-dessous pour nous contacter.</span>
+            <span class="en" style="display:none;">Please fill out the form below to contact us.</span>
+            <span class="cn" style="display:none;">请填写以下表格与我们联系。</span>
+        </p>
+
+        <form method="post" action="#">
+            <fieldset><legend>
+                <span class="fr">Puis-je vous contacter ?</span>
+                <span class="en" style="display:none;">Can I contact you?</span>
+                <span class="cn" style="display:none;">我可以联系您吗？</span>
+            </legend>
+
+            <p><label for="fName">
+                <span class="fr">Prénom</span> / <span class="en" style="display:none;">First Name</span> / <span class="cn" style="display:none;">名字</span> :
+            </label>
+            <input type="text" name="fName" id="fName" required></p>
+
+            <p><label for="lName">
+                <span class="fr">Nom</span> / <span class="en" style="display:none;">Last Name</span> / <span class="cn" style="display:none;">姓氏</span> :
+            </label>
+            <input type="text" name="lName" id="lName" required></p>
+
+            <p><label for="email">
+                <span class="fr">Email</span> / <span class="en" style="display:none;">Email</span> / <span class="cn" style="display:none;">电子邮件</span> :
+            </label>
+            <input type="email" name="email" id="email" required></p>
+
+            <p><label for="address">
+                <span class="fr">Adresse</span> / <span class="en" style="display:none;">Address</span> / <span class="cn" style="display:none;">地址</span> :
+            </label>
+            <input type="text" name="address" id="address"></p>
+
+            <div style="display: flex; justify-content: space-between;">
+                <button type="submit" onClick="validate(form)||event.preventDefault();">
+                    <span class="fr">Envoyer</span> / <span class="en" style="display:none;">Submit</span> / <span class="cn" style="display:none;">提交</span>
+                </button>
+                <button type="reset">
+                    <span class="fr">Réinitialiser</span> / <span class="en" style="display:none;">Reset</span> / <span class="cn" style="display:none;">重置</span>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <p>
+        <span class="fr">Dernière mise à jour : 30 novembre 2024</span>
+        <span class="en" style="display:none;">Last updated: November 30, 2024</span>
+        <span class="cn" style="display:none;">最后更新时间：2024年11月30日</span>
+    </p>
+</footer>
+</body>
+</html>

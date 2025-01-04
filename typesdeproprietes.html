@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Types / Types de Propriétés / 房产类型</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.en, .fr, .cn').forEach(el => el.style.display = 'none');
+            document.querySelectorAll(`.${lang}`).forEach(el => el.style.display = 'inline');
+        }
+
+        window.onload = () => {
+            switchLanguage('en'); // 默认显示英语
+        };
+    </script>
+</head>
+<body>
+   <header class="header">
+      <!-- Left: Navigation Links -->
+      <div class="header-left">
+        <nav>
+                <ul>
+                    <li><a href="infosClients.html" class="en" data-lang="en">Contact Us</a><a href="infosClients.html" class="fr" data-lang="fr" style="display:none;">Contactez-nous</a><a href="infosClients.html" class="cn" data-lang="cn" style="display:none;">联系我们</a></li>
+                    <li><a href="typesdeproprietes.html" class="en" data-lang="en">Properties</a><a href="typesdepropriete.html" class="fr" data-lang="fr" style="display:none;">Propriétés</a><a href="typesdeproprietes.html" class="cn" data-lang="cn" style="display:none;">房产</a></li>
+                    <li><a href="menu.html" class="en" data-lang="en">Home</a><a href="menu.html" class="fr" data-lang="fr" style="display:none;">Accueil</a><a href="menu.html" class="cn" data-lang="cn" style="display:none;">首页</a></li>
+                </ul>
+            </nav>
+      </div>
+
+      <!-- Center: Title -->
+      <div class="header-content">
+         <h1>
+            <span class="en">Property Types</span>
+            <span class="fr" style="display:none;">Types de Propriétés</span>
+            <span class="cn" style="display:none;">房产类型</span>
+         </h1>
+      </div>
+
+      <!-- Right: Language Switch Buttons -->
+      <div class="header-right">
+         <div class="language-switch">
+            <button onclick="switchLanguage('en')">EN</button>
+            <button onclick="switchLanguage('fr')">FR</button>
+            <button onclick="switchLanguage('cn')">CN</button>
+         </div>
+      </div>
+   </header>
+</body>
+
+    <div class="property-types">
+        <!-- Image leading to another page -->
+        <a href="condo.html">
+            <img src="images/condo1.jpg" alt="Condo">
+            <p>
+                <span class="en">Condos / Condominiums</span>
+                <span class="fr" style="display:none;">Condos / Condominiums</span>
+                <span class="cn" style="display:none;">独立产权公寓</span>
+            </p>
+        </a>
+        <a href="house.html">
+            <img src="images/house1.jpg" alt="House">
+            <p>
+                <span class="en">Houses</span>
+                <span class="fr" style="display:none;">Maisons</span>
+                <span class="cn" style="display:none;">房屋</span>
+            </p>
+        </a>
+        <a href="appartement.html">
+            <img src="images/app1.jpg" alt="Appartement">
+            <p>
+                <span class="en">Apartments</span>
+                <span class="fr" style="display:none;">Appartements</span>
+                <span class="cn" style="display:none;">单元房公寓</span>
+            </p>
+        </a>
+    </div>
+
+    <footer>
+        <p>
+            <span class="en">&copy; 2024 Bell Maison. All rights reserved.</span>
+            <span class="fr" style="display:none;">&copy; 2024 Bell Maison. Tous droits réservés.</span>
+            <span class="cn" style="display:none;">版权所有 © 2024 Bell Maison。</span>
+        </p>
+    </footer>
+</body>
+</html>

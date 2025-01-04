@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montréal Real Estate Listings</title>
+    <link rel="stylesheet" href="styles/styleA.css">
+    <script>
+       function switchLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-lang]').forEach(el => {
+        // 确保每个元素在切换时根据语言切换
+        el.style.display = el.dataset.lang === lang ? '' : 'none';
+    });
+}
+
+// 默认显示英文
+document.addEventListener("DOMContentLoaded", () => {
+    switchLanguage('en');
+});
+
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div class="Bell Maison">
+                <h1>
+                    <span data-lang="en">Montreal Real Estate</span>
+                    <span data-lang="fr" style="display:none;">Immobilières de Montréal</span>
+                    <span data-lang="cn" style="display:none;">蒙特利尔房地产</span>
+                </h1>
+            </div>
+             <a href="#" onclick="switchLanguage('en')"></a>
+            <nav>
+                <ul>
+                    <li><a href="infosClients.html" class="en" data-lang="en">Contact Us</a><a href="infosClients.html" class="fr" data-lang="fr" style="display:none;">Contactez-nous</a><a href="infosClients.html" class="cn" data-lang="cn" style="display:none;">联系我们</a></li>
+                    <li><a href="typesdeproprietes.html" class="en" data-lang="en">Properties</a><a href="typesdepropriete.html" class="fr" data-lang="fr" style="display:none;">Propriétés</a><a href="typesdeproprietes.html" class="cn" data-lang="cn" style="display:none;">房产</a></li>
+                    <li><a href="menu.html" class="en" data-lang="en">Home</a><a href="menu.html" class="fr" data-lang="fr" style="display:none;">Accueil</a><a href="menu.html" class="cn" data-lang="cn" style="display:none;">首页</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <a href="#" onclick="switchLanguage('en')">EN</a> | <a href="#" onclick="switchLanguage('fr')">FR</a> | <a href="#" onclick="switchLanguage('cn')">中文</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="property-listings">
+
+            <!-- Property 1 (Low Price Listing) -->
+            <div class="property">
+                <h3 data-lang="en">Affordable and Ideal for First-Time Buyers</h3>
+                <h3 data-lang="fr" style="display:none;">Abordable et Idéal pour les Primo-Accédants</h3>
+                <h3 data-lang="cn" style="display:none;">价格实惠，首次购房者理想选择</h3>
+                <h2 data-lang="en">1. $255,000 - 5720 Boul. Cavendish, #404, Côte-Saint-Luc, Quebec</h2>
+                <h2 data-lang="fr" style="display:none;">1. 255 000 $ - 5720 Boul. Cavendish, #404, Côte-Saint-Luc, Québec</h2>
+                <h2 data-lang="cn" style="display:none;">1. 255,000美元 - 5720 Boul. Cavendish, #404, Côte-Saint-Luc, 魁北克</h2>
+                <p data-lang="en"><strong>Price Level:</strong> Low</p>
+                <p data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Bas</p>
+                <p data-lang="cn" style="display:none;"><strong>价格级别：</strong>低</p>
+                <div class="property-content">
+                    <p data-lang="en"><strong>1 Bedroom</strong> | <strong>1 Bathroom</strong> | <strong>744 Sq. Ft.</strong></p>
+                    <p data-lang="fr" style="display:none;"><strong>1 Chambre</strong> | <strong>1 Salle de bain</strong> | <strong>744 Pi²</strong></p>
+                    <p data-lang="cn" style="display:none;"><strong>1 卧室</strong> | <strong>1 浴室</strong> | <strong>744 平方英尺</strong></p>
+                    <p data-lang="en"><strong>Description:</strong> Great value for first-time buyers or investors. Bright and convenient location with easy access to transportation.</p>
+                    <p data-lang="fr" style="display:none;"><strong>Description :</strong> Excellente valeur pour les primo-accédants ou les investisseurs. Emplacement pratique avec un bon accès aux transports.</p>
+                    <p data-lang="cn" style="display:none;"><strong>描述：</strong>对首次购房者或投资者来说，具有很高的性价比。明亮便利，交通方便。</p>
+                    <img src="images/house1.jpg" alt="Maison en vedette">
+                </div>
+            </div>
+
+            <!-- Property 2 (Medium Price Listing) -->
+            <div class="property">
+                <h3 data-lang="en">Spacious and Comfortable Living</h3>
+                <h3 data-lang="fr" style="display:none;">Vie Spacieuse et Confortable</h3>
+                <h3 data-lang="cn" style="display:none;">宽敞舒适</h3>
+                <h2 data-lang="en">2. $850,000 - 2054-2056 Av. Belgrave, Montréal (Côte-des-Neiges/Notre-Dame-de-Grâce), Quebec</h2>
+                <h2 data-lang="fr" style="display:none;">2. 850 000 $ - 2054-2056 Av. Belgrave, Montréal (Côte-des-Neiges/Notre-Dame-de-Grâce), Québec</h2>
+                <h2 data-lang="cn" style="display:none;">2. 850,000美元 - 2054-2056 Av. Belgrave, 蒙特利尔（Côte-des-Neiges/Notre-Dame-de-Grâce），魁北克</h2>
+                <p data-lang="en"><strong>Price Level:</strong> Medium</p>
+                <p data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Moyen</p>
+                <p data-lang="cn" style="display:none;"><strong>价格级别：</strong>中</p>
+                <div class="property-content">
+                    <p data-lang="en"><strong>4 Bedrooms</strong> | <strong>2 Bathrooms</strong></p>
+                    <p data-lang="fr" style="display:none;"><strong>4 Chambres</strong> | <strong>2 Salles de bain</strong></p>
+                    <p data-lang="cn" style="display:none;"><strong>4 卧室</strong> | <strong>2 浴室</strong></p>
+                    <p data-lang="en"><strong>Description:</strong> Spacious home perfect for families, located in a quiet neighborhood with easy access to parks and schools.</p>
+                    <p data-lang="fr" style="display:none;"><strong>Description :</strong> Maison spacieuse idéale pour les familles, située dans un quartier calme, avec un accès facile aux parcs et écoles.</p>
+                    <p data-lang="cn" style="display:none;"><strong>描述：</strong>宽敞的住宅，非常适合家庭，位于安静的社区，靠近公园和学校。</p>
+                    <img src="images/house2.jpg" alt="Maison en vedette">
+                </div>
+            </div>
+
+            <!-- Property 3 (High Price Listing) -->
+            <div class="property">
+                <h3 data-lang="en">Luxury and Elegant Living</h3>
+                <h3 data-lang="fr" style="display:none;">Vie de Luxe et Élégante</h3>
+                <h3 data-lang="cn" style="display:none;">奢华而优雅</h3>
+                <h2 data-lang="en">3. $1,688,000 - 4230 Av. West Hill, Montréal (Côte-des-Neiges/Notre-Dame-de-Grâce), Quebec</h2>
+                <h2 data-lang="fr" style="display:none;">3. 1 688 000 $ - 4230 Av. West Hill, Montréal (Côte-des-Neiges/Notre-Dame-de-Grâce), Québec</h2>
+                <h2 data-lang="cn" style="display:none;">3. 1,688,000美元 - 4230 Av. West Hill, 蒙特利尔（Côte-des-Neiges/Notre-Dame-de-Grâce），魁北克</h2>
+                <p data-lang="en"><strong>Price Level:</strong> High</p>
+                <p data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Élevé</p>
+                <p data-lang="cn" style="display:none;"><strong>价格级别：</strong>高</p>
+                <div class="property-content">
+                    <p data-lang="en"><strong>4 Bedrooms</strong> | <strong>3 Bathrooms</strong> | <strong>1759 Sq. Ft.</strong></p>
+                    <p data-lang="fr" style="display:none;"><strong>4 Chambres</strong> | <strong>3 Salles de bain</strong> | <strong>1759 Pi²</strong></p>
+                    <p data-lang="cn" style="display:none;"><strong>4 卧室</strong> | <strong>3 浴室</strong> | <strong>1759 平方英尺</strong></p>
+                    <p data-lang="en"><strong>Description:</strong> A luxurious home featuring modern amenities, ideal for those seeking the best in design and location.</p>
+                    <p data-lang="fr" style="display:none;"><strong>Description :</strong> Maison luxueuse avec des équipements modernes, idéale pour ceux qui recherchent le meilleur en termes de design et d'emplacement.</p>
+                    <p data-lang="cn" style="display:none;"><strong>描述：</strong>一座豪华住宅，配备现代化设施，理想的设计和位置，是追求高品质生活的最佳选择。</p>
+                    <img src="images/house3.jpg" alt="Maison en vedette">
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

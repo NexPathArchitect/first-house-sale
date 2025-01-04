@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Listings - Appartements en vedette</title>
+    <link rel="stylesheet" href="styles/styleA.css">
+    <script>
+        function switchLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.dataset.lang === lang ? '' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div class="Bell Maison">
+                <h1 data-lang="en">Featured Listing / Appartements en vedettes</h1>
+                <h1 data-lang="fr" style="display:none;">Appartements en vedettes</h1>
+                <h1 data-lang="zh" style="display:none;">特色公寓</h1>
+            </div>
+            <a href="#" onclick="switchLanguage('en')"></a>
+            <nav>
+                <ul>
+                    <li><a href="infosClients.html" class="en" data-lang="en">Contact Us</a><a href="infosClients.html" class="fr" data-lang="fr" style="display:none;">Contactez-nous</a><a href="infosClients.html" class="zh" data-lang="zh" style="display:none;">联系我们</a></li>
+                    <li><a href="typesdeproprietes.html" class="en" data-lang="en">Properties</a><a href="typesdepropriete.html" class="fr" data-lang="fr" style="display:none;">Propriétés</a><a href="typesdeproprietes.html" class="zh" data-lang="zh" style="display:none;">房产</a></li>
+                    <li><a href="menu.html" class="en" data-lang="en">Home</a><a href="menu.html" class="fr" data-lang="fr" style="display:none;">Accueil</a><a href="menu.html" class="zh" data-lang="zh" style="display:none;">首页</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <a href="#" onclick="switchLanguage('en')">EN</a> | <a href="#" onclick="switchLanguage('fr')">FR</a> | <a href="#" onclick="switchLanguage('zh')">中文</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="property-listings">
+            <!-- Property 1 -->
+            <div class="property">
+                <h3 data-lang="en">Charming Family Apartment</h3>
+                <h3 data-lang="fr" style="display:none;">Charmant appartement familial</h3>
+                <h3 data-lang="zh" style="display:none;">超大豪华公寓</h3>
+                <h2 data-lang="en">1. $1,025,000 - 6300 Rue St-Denis, Montréal</h2>
+                <h2 data-lang="fr" style="display:none;">1. 1 025 000 $ - 6300 Rue St-Denis, Montréal</h2>
+                <h2 data-lang="zh" style="display:none;">1. 1,025,000 $ - 6300 Rue St-Denis, 蒙特利尔</h2>
+                <p data-lang="en"><strong>Price Level:</strong> High</p>
+                <p data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Élevé</p>
+                <p data-lang="zh" style="display:none;"><strong>价格水平：</strong> 高</p>
+                <div class="property-content">
+                    <p data-lang="en"><strong>4 Bedrooms</strong> | <strong>2 Bathrooms</strong> | <strong>1696 Sq. Ft.</strong></p>
+                    <p data-lang="fr" style="display:none;"><strong>4 Chambres</strong> | <strong>2 Salles de bain</strong> | <strong>1696 Pi²</strong></p>
+                    <p data-lang="zh" style="display:none;"><strong>4 卧室</strong> | <strong>2 卫浴</strong> | <strong>1696 平方英尺</strong></p>
+                    <p data-lang="en"><strong>Description:</strong> A luxurious family apartment located in the heart of Rosemont.</p>
+                    <p data-lang="fr" style="display:none;"><strong>Description :</strong> Un luxueux appartement familial situé au cœur de Rosemont.</p>
+                    <p data-lang="zh" style="display:none;"><strong>描述：</strong> 一间位于罗斯蒙特心脏地带的豪华家庭公寓。</p>
+                    <img src="images/app1.jpg" alt="Featured Apartment">
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property">
+                <h3 data-lang="en">Modern 2-Bedroom Apartment in Downtown</h3>
+                <h3 data-lang="fr" style="display:none;">Appartement moderne de 2 chambres au centre-ville</h3>
+                <h3 data-lang="zh" style="display:none;">市中心现代化两卧公寓</h3>
+                <h2 data-lang="en">2. $660,000 - 201 Ch. de la Pointe-Sud, #105, Montréal</h2>
+                <h2 data-lang="fr" style="display:none;">2. 660 000 $ - 201 Ch. de la Pointe-Sud, #105, Montréal</h2>
+                <h2 data-lang="zh" style="display:none;">2. 660,000 $ - 201 Ch. de la Pointe-Sud, #105, 蒙特利尔</h2>
+                <p data-lang="en"><strong>Price Level:</strong> Medium</p>
+                <p data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Moyen</p>
+                <p data-lang="zh" style="display:none;"><strong>价格水平：</strong> 中等</p>
+                <div class="property-content">
+                    <p data-lang="en"><strong>2 Bedrooms</strong> | <strong>2 Bathrooms</strong> | <strong>1012 Sq. Ft.</strong></p>
+                    <p data-lang="fr" style="display:none;"><strong>2 Chambres</strong> | <strong>2 Salles de bain</strong> | <strong>1012 Pi²</strong></p>
+                    <p data-lang="zh" style="display:none;"><strong>2 卧室</strong> | <strong>2 卫浴</strong> | <strong>1012 平方英尺</strong></p>
+                    <p data-lang="en"><strong>Description:</strong> Modern apartment with spacious rooms in Verdun.</p>
+                    <p data-lang="fr" style="display:none;"><strong>Description :</strong> Appartement moderne avec des pièces spacieuses à Verdun.</p>
+                    <p data-lang="zh" style="display:none;"><strong>描述：</strong> 一间位于Verdun的现代化公寓，房间宽敞。</p>
+                    <img src="images/app2.jpg" alt="Featured Apartment">
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property">
+                <h3 data-lang="en">Spacious Family Apartment with Garden</h3>
+                <h3 data-lang="fr" style="display:none;">Appartement familial spacieux avec jardin</h3>
+                <h3 data-lang="zh" style="display:none;">带花园的宽敞家庭公寓</h3>
+                <h2 data-lang="en">3. $299,000 - 12815 Rue Ubald-Paquin, #5, Montréal</h2>
+                <h2 data-lang="fr" style="display:none;">3. 299 000 $ - 12815 Rue Ubald-Paquin, #5, Montréal</h2>
+                <h2 data-lang="zh" style="display:none;">3. 299,000 $ - 12815 Rue Ubald-Paquin, #5, 蒙特利尔</h2>
+                <p data-lang="en"><strong>Price Level:</strong> Low</p>
+                <p data-lang="fr" style="display:none;"><strong>Niveau de prix :</strong> Bas</p>
+                <p data-lang="zh" style="display:none;"><strong>价格水平：</strong> 低</p>
+                <div class="property-content">
+                    <p data-lang="en"><strong>2 Bedrooms</strong> | <strong>1 Bathroom</strong> | <strong>936 Sq. Ft.</strong></p>
+                    <p data-lang="fr" style="display:none;"><strong>2 Chambres</strong> | <strong>1 Salle de bain</strong> | <strong>936 Pi²</strong></p>
+                    <p data-lang="zh" style="display:none;"><strong>2 卧室</strong> | <strong>1 卫浴</strong> | <strong>936 平方英尺</strong></p>
+                    <p data-lang="en"><strong>Description:</strong> Affordable apartment ideal for first-time buyers in a vibrant neighborhood.</p>
+                    <p data-lang="fr" style="display:none;"><strong>Description :</strong> Appartement abordable idéal pour les primo-accédants dans un quartier vivant.</p>
+                    <p data-lang="zh" style="display:none;"><strong>描述：</strong> 适合首次购房者的实惠公寓，位于充满活力的社区。</p>
+                    <img src="images/app3.jpg" alt="Featured Apartment">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p data-lang="en">Visit us at: 123 Rue du Parc, Montréal, QC</p>
+            <p data-lang="fr" style="display:none;">Visitez-nous à : 123 Rue du Parc, Montréal, QC</p>
+            <p data-lang="zh" style="display:none;">联系我们：123 Rue du Parc, 蒙特利尔，QC</p>
+        </div>
+    </footer>
+
+</body>
+</html>
